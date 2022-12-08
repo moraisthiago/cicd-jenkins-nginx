@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  jenkins:
+    container_name: jenkins
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - /home/laced-tsi-01/Downloads/Jenkins/jenkins_home/:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock

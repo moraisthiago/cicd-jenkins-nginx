@@ -10,3 +10,4 @@ nginx -t
 nginx -s reload
 
 tail -f /var/log/nginx/nginx-access.log
+
